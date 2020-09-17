@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     var peoplenames = [String]()
+    var peopledone = [Bool]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         peopleTableview.delegate = self
         
         peoplenames.append("Arne")
+        peopledone.append(false)
+
         peoplenames.append("Bertil")
+        peopledone.append(true)
+        
         peoplenames.append("Caesar")
+        peopledone.append(false)
+        
         peoplenames.append("David")
+        peopledone.append(false)
+        
         peoplenames.append("Erik")
+        peopledone.append(false)
+        
+
     }
 
     
@@ -39,26 +51,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         peoplenames.append(nameTextfield.text!)
+        peopledone.append(false)
         peopleTableview.reloadData()
         nameTextfield.text = ""
     }
     
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return peoplenames.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "personcell") as! PersonTableViewCell
-        
-        cell.personLabel.text = peoplenames[indexPath.row]
-        
-        return cell
-    }
     
     
 }
+
+
+
+
 

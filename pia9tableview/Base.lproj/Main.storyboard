@@ -33,15 +33,39 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhP-be-vXX">
+                                                    <rect key="frame" x="344" y="11" width="50" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="PKx-xy-c9E"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-xD-unz">
+                                                    <rect key="frame" x="192" y="16.5" width="30" height="30"/>
+                                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="6Co-27-zPE"/>
+                                                        <constraint firstAttribute="width" constant="30" id="cGh-Hu-d0M"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="dhP-be-vXX" firstAttribute="top" secondItem="ekX-BO-ZC1" secondAttribute="topMargin" id="GUe-wn-ORj"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="wi7-y3-w66" secondAttribute="trailing" id="P8T-ZY-3P2"/>
+                                                <constraint firstItem="C4V-xD-unz" firstAttribute="centerY" secondItem="ekX-BO-ZC1" secondAttribute="centerY" id="PzS-g9-Ghl"/>
                                                 <constraint firstItem="wi7-y3-w66" firstAttribute="leading" secondItem="ekX-BO-ZC1" secondAttribute="leadingMargin" id="eDe-Kc-9RG"/>
+                                                <constraint firstItem="C4V-xD-unz" firstAttribute="centerX" secondItem="ekX-BO-ZC1" secondAttribute="centerX" id="laD-FX-blI"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="wi7-y3-w66" secondAttribute="bottom" id="nLX-S6-cAv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dhP-be-vXX" secondAttribute="bottom" id="oqf-cB-hIf"/>
                                                 <constraint firstItem="wi7-y3-w66" firstAttribute="top" secondItem="ekX-BO-ZC1" secondAttribute="topMargin" id="pMm-VD-CVN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dhP-be-vXX" secondAttribute="trailing" id="re9-iB-aXu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="ageLabel" destination="dhP-be-vXX" id="lic-fx-wCv"/>
+                                            <outlet property="doneView" destination="C4V-xD-unz" id="KFr-Cd-JYm"/>
                                             <outlet property="personLabel" destination="wi7-y3-w66" id="I08-7h-D9O"/>
                                         </connections>
                                     </tableViewCell>
@@ -94,6 +118,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

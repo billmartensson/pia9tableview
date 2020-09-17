@@ -9,8 +9,11 @@ import UIKit
 
 class PersonTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var personLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    
+    @IBOutlet weak var doneView: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

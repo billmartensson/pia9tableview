@@ -14,6 +14,7 @@
 		AB5D5845250F4F9900085212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5D5844250F4F9900085212 /* Assets.xcassets */; };
 		AB5D5848250F4F9900085212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5D5846250F4F9900085212 /* LaunchScreen.storyboard */; };
 		AB5D5850250F58AC00085212 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D584F250F58AC00085212 /* PersonTableViewCell.swift */; };
+		ABE191C225134FCB00E3DD3A /* ViewControllerTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE191C125134FCB00E3DD3A /* ViewControllerTV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AB5D5847250F4F9900085212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB5D5849250F4F9900085212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5D584F250F58AC00085212 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		ABE191C125134FCB00E3DD3A /* ViewControllerTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				AB5D583B250F4F9700085212 /* AppDelegate.swift */,
 				AB5D583D250F4F9700085212 /* SceneDelegate.swift */,
 				AB5D583F250F4F9700085212 /* ViewController.swift */,
+				ABE191C125134FCB00E3DD3A /* ViewControllerTV.swift */,
 				AB5D584F250F58AC00085212 /* PersonTableViewCell.swift */,
 				AB5D5841250F4F9700085212 /* Main.storyboard */,
 				AB5D5844250F4F9900085212 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				AB5D583C250F4F9700085212 /* AppDelegate.swift in Sources */,
 				AB5D5850250F58AC00085212 /* PersonTableViewCell.swift in Sources */,
 				AB5D583E250F4F9700085212 /* SceneDelegate.swift in Sources */,
+				ABE191C225134FCB00E3DD3A /* ViewControllerTV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
